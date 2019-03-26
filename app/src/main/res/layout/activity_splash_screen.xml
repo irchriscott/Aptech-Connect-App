@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/radial_gradient"
+        tools:context=".SplashScreen">
+
+    <TextView
+            android:id="@+id/aptechtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/connectText"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/connectText"
+            android:layout_marginTop="216dp"
+            android:text="Aptech"
+            android:textSize="55dp"
+            android:fontFamily="@font/aliquam"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+    <TextView
+            android:id="@+id/connectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aptechtext"
+            android:layout_centerHorizontal="true"
+            android:text="Connect"
+            android:textSize="55dp"
+            android:fontFamily="@font/aliquam_reg"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+</RelativeLayout>

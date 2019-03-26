@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/radial_gradient"
+            tools:context=".Login">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/aptechText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/aliquam"
+                android:text="Aptech"
+                android:textColor="@color/white"
+                android:textSize="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.554"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints,SpUsage,UnusedAttribute" />
+
+        <TextView
+                android:id="@+id/connectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/aliquam_reg"
+                android:text="Connect"
+                android:textColor="@color/white"
+                android:textSize="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aptechText"
+                tools:ignore="SpUsage,UnusedAttribute" />
+
+
+        <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:text="Login Into The App"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/connectText"
+                tools:ignore="HardcodedText,SpUsage" />
+
+
+        <EditText
+                android:id="@+id/rollNumber"
+                android:layout_width="369dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_white"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_edit_black_24dp"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:hint="Roll Number"
+                android:inputType="text"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:singleLine="true"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+                tools:ignore="Autofill,HardcodedText,SpUsage,UnusedAttribute" />
+
+        <EditText
+                android:id="@+id/password"
+                android:layout_width="369dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_white"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/ic_lock_grey_24dp"
+                android:drawableRight="@drawable/ic_lock_grey_24dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:singleLine="true"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rollNumber"
+                tools:ignore="Autofill,HardcodedText,SpUsage,UnusedAttribute" />
+
+        <Button
+                android:id="@+id/createAccountButton"
+                android:layout_width="369dp"
+                android:layout_height="71dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/login_button"
+                android:drawablePadding="20dp"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="21dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/password"
+                tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

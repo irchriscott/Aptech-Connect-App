@@ -1,5 +1,7 @@
 package com.scorpions.aptechconnectapp.models
 
+import com.scorpions.aptechconnectapp.utils.Routes
+
 class User(
     var id: Int,
     var name: String,

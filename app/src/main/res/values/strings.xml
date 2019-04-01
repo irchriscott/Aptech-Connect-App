@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Aptech Connect</string>
+    <string name="drawerOpen">Open</string>
+    <string name="drawerClose">Close</string>
 </resources>

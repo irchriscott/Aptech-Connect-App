@@ -23,12 +23,21 @@ class UserAuthentication(
         this.sharedPreferencesEditor.commit()
     }
 
-    public fun getUserFromSharedPreferences() : User{
+    public fun getUserFromSharedPreferences() : User? {
         val gson: Gson = GsonBuilder().create()
         val userString = this.sharedPreferences.getString("user", null)
-        return gson.fromJson(userString, User::class.java)
+        return if (userString != null) {
+            gson.fromJson(userString, User::class.java)
+        } else {
+            null
+        }
     }
 
     public fun isLoggedIn(): Boolean = this.sharedPreferences.getString("user", null) != null
+
+    public fun logOutUser(){
+        this.sharedPreferencesEditor.remove("user")
+        this.sharedPreferencesEditor.apply()
+    }
 
 }

@@ -17,7 +17,7 @@ class SplashScreen : Activity() {
 
     private var delayHandler: Handler? = null
     private var SPLASH_SCREEN_TIME: Long = 5000
-    private val userAuthentication: UserAuthentication = UserAuthentication(this@SplashScreen)
+    lateinit var userAuthentication: UserAuthentication
 
     private val runnable: Runnable = Runnable {
         if(!isFinishing){
@@ -34,7 +34,9 @@ class SplashScreen : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        aptechText = findViewById<TextView>(R.id.aptechtext) as TextView
+        userAuthentication = UserAuthentication(this@SplashScreen)
+
+        aptechText = findViewById<TextView>(R.id.aptechText) as TextView
         connectText = findViewById<TextView>(R.id.connectText) as TextView
 
         animation = AnimationUtils.loadAnimation(this, R.anim.anim_splash_screen)

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="2dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            <TextView
+                    card_view:layout_constraintTop_toBottomOf="@id/userName"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp"
+                    android:id="@+id/userCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    card_view:layout_constraintTop_toBottomOf="@id/userCourse"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/venueIcon"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    card_view:layout_constraintTop_toBottomOf="@id/userCourse"
+                    card_view:layout_constraintStart_toEndOf="@id/venueIcon"
+                    android:id="@+id/userBranch"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

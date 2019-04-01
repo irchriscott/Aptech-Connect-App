@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/message_sent"
+        layout="@layout/my_message" />
+
+    <include
+            android:id="@+id/message_received"
+            layout="@layout/their_message" />
+
+</RelativeLayout>

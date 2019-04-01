@@ -81,7 +81,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/welcomeText"
-                tools:ignore="Autofill,HardcodedText,SpUsage,UnusedAttribute" />
+                tools:ignore="Autofill,HardcodedText,SpUsage,TextFields,UnusedAttribute" />
 
         <EditText
                 android:id="@+id/password"
@@ -106,7 +106,7 @@
                 tools:ignore="Autofill,HardcodedText,SpUsage,UnusedAttribute" />
 
         <Button
-                android:id="@+id/createAccountButton"
+                android:id="@+id/loginButton"
                 android:layout_width="369dp"
                 android:layout_height="71dp"
                 android:layout_marginStart="8dp"

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:clipToPadding="false"
+              android:focusableInTouchMode="true"
+              tools:context=".ChatActivity">
+
+    <android.support.v7.widget.RecyclerView
+            android:background="#DDD"
+            android:layout_width="match_parent"
+            android:id="@+id/messages_view"
+            android:layout_weight="2"
+            android:divider="#fff"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:weightSum="10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="0.3"/>
+
+        <EditText
+                android:id="@+id/messageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="10.3"
+                android:background="@drawable/edit_text_grey_no_radius"
+                android:hint="Enter Message"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:paddingBottom="10dp" />
+
+
+        <ImageView
+                android:id="@+id/sendMessage"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:src="@drawable/ic_send_black_24dp" />
+
+    </LinearLayout>
+</LinearLayout>

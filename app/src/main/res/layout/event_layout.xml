@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp"
+            android:layout_height="match_parent"
+            card_view:cardElevation="2dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/eventPoster"
+                    android:scaleType="fitXY"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <TextView
+                    card_view:layout_constraintTop_toBottomOf="@id/eventPoster"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:id="@+id/eventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    card_view:layout_constraintTop_toBottomOf="@id/eventName"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/venueIcon"
+                    android:src="@drawable/ic_place_black_24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    card_view:layout_constraintTop_toBottomOf="@id/eventName"
+                    card_view:layout_constraintStart_toEndOf="@id/venueIcon"
+                    android:id="@+id/eventVenue"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_height="wrap_content"/>
+
+            <ImageView
+                    card_view:layout_constraintTop_toBottomOf="@id/venueIcon"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/timeIcon"
+                    android:src="@drawable/ic_event_black_24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    card_view:layout_constraintTop_toBottomOf="@id/venueIcon"
+                    card_view:layout_constraintStart_toEndOf="@id/timeIcon"
+                    android:id="@+id/eventTime"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    card_view:layout_constraintTop_toBottomOf="@id/timeIcon"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/eventDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_height="wrap_content"/>
+
+            <ImageButton
+                    android:id="@+id/addToReminder"
+                    android:padding="8dp"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/ic_add_alarm_black_24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+                    card_view:layout_constraintTop_toTopOf="parent"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

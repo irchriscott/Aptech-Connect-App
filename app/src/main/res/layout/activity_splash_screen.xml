@@ -9,7 +9,7 @@
         tools:context=".SplashScreen">
 
     <TextView
-            android:id="@+id/aptechtext"
+            android:id="@+id/aptechText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/connectText"
@@ -26,7 +26,7 @@
             android:id="@+id/connectText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/aptechtext"
+            android:layout_below="@+id/aptechText"
             android:layout_centerHorizontal="true"
             android:text="Connect"
             android:textSize="55dp"

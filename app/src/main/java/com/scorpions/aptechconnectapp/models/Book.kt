@@ -6,7 +6,6 @@ class Book(
     var title: String,
     var author: String,
     var book: String,
-    var is_link: Boolean,
     var created_at: String,
     var updated_at: String
 ){}
